@@ -1,1 +1,6 @@
 # CSCI-567_ML_Project
+
+Our primary goal is to incorporate commonsense knowledge into the model to create more realistic and contextually appropriate sarcastic outputs. We aim to build a model that produces sarcastic statements given a context in a question-answering format. To achieve this, we utilize a dataset from Reddit as introduced by Khodak et al. (2017), containing 100k sarcastic comments along with their context, to train the AI model. Unlike traditional methods, we generate questions from the context over a pre-trained LLM to train the model. This results in improved performance in capturing sarcasm nuances compared to training with context alone. By incorporating incongruity, implied meaning, tone, context, and pragmatic inference into our model, we aim to create an AI model that can generate text that is not only sarcastic but also
+deemed ”sufficiently” sarcastic by human standards.
+
+This repository contains the modified dataset containing the context, sarcastic comments, generated questions, and pre-processing modules. It also has the sarcasm generation model which is a finetuned version of GPT-2 in the "Sarcasm_GPT2_training_&_inference.ipynb" and the mistral prompt-based version in "Prompt-based-approach.ipynb" files. We built a separate model for sarcasm detection as a baseline available in the Sarcasm detection section.  
