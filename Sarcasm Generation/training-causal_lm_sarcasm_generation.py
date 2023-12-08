@@ -89,7 +89,7 @@ training_dataset = SarcasticCommentDataset(dataset["input_ids"], dataset["labels
 #     max_length=300
 # )
 
-epochs=20
+epochs=7
 
 # Define the training arguments
 training_args = TrainingArguments(
