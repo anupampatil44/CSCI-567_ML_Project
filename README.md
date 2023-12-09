@@ -5,10 +5,12 @@ Our primary goal is to incorporate commonsense knowledge into the model to creat
 This repository contains the following modules:
 1. Dataset:
    a. Pre-processing modules for the Reddit and IMDB datasets.
-   b. Modified dataset containing the questions e generated based on context to get better results. Uses a Llama-2 script to augment the dataset.
+   b. Modified dataset containing the questions e generated based on context to get better results. It uses a Llama-2 script to augment the dataset.
 3. Sarcasm Detection: We built a separate model for sarcasm detection as a baseline.  
-4. Sarcasm Generation:
-   a. "Prompt-based-approach.ipynb" - Mistral-7b prompt-based version.
-   b. "Sarcasm_GPT2_training_&_inference.ipynb" - Finetuned version of GPT-2. Contains the 2 approaches using different hyperparameters and tokenizers(casual and seq2seq).
-5. Results: This contains the inference of the generated comments as calculated by our detection model along with their accuracy, F-1 scores, precision, and recall.
-6. Generated sarcastic comments: Csv file containing all the generated responses by our models.
+4. Sarcasm Generation:<br>
+   a. `Prompt-based-approach.ipynb` - Our prompt-based approach which uses Mistral-7b.<br>
+   b. `Sarcasm_GPT2_training_&_inference.ipynb` - Finetuned version of GPT-2 (the model we obtained our best results on). You may follow the notebook for the reproduction of results. <br>
+   c. `training-causal_lm_sarcasm_generation.py` - Generalised training script for all our baselines as a Causal-LM task.
+   d. `training-seq2seq_sarcasm_generation.py` - Generalised training script for all our baselines as a Seq2Seq task.
+6. Results: This contains the inference of the generated comments calculated by our detection model along with their accuracy, F-1 scores, precision, and recall.
+7. Generated sarcastic comments: CSV file containing all the generated responses by our models.
