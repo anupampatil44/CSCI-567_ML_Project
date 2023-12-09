@@ -6,7 +6,7 @@ This repository contains the following modules:
 1. Modified dataset: Pre-processing modules for the Reddit and IMDB datasets.
 2. Sarcasm Detection: We built a separate model for sarcasm detection as a baseline.  
 3. Sarcasm Generation:
-   a. "Prompt-based-approach.ipynb" - Mistral-7b prompt-based version.
+   a. "Prompt-based-approach.ipynb" - Mistral-7b prompt-based version.<br>
    b. "Sarcasm_GPT2_training_&_inference.ipynb" - Finetuned version of GPT-2. Contains the 2 approaches using different hyperparameters and tokenizers(casual and seq2seq).
 5. Results: This contains the inference of the generated comments as calculated by our detection model along with their accuracy, F-1 scores, precision, and recall.
 6. Generated sarcastic comments: Csv file containing all the generated responses by our models.
